@@ -113,7 +113,11 @@ takes a minute; subsequent interactions are instant.
 ```
 ercot-energy-demand-forecasting/
 ├── app/
-│   └── main.py          # self-contained pipeline + interactive Grid Planner
+│   └── main.py                  # self-contained pipeline + interactive Grid Planner (Streamlit)
+├── sql/
+│   └── join_demand_weather.sql  # Stage B: DuckDB join + calendar features
+├── docs/
+│   └── pipeline.md              # stage-by-stage canvas narration (A → H)
 ├── requirements.txt
 ├── .gitignore
 ├── LICENSE
